@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>paarees perfumes</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
+<link rel="icon" href="../images/abc.png" type="image" sizes=5*5>
+<style>
+#example1{
+    background:url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 175%;
+   }
+.fa:hover {
+    opacity: 0.7;}
+.space{
+margin-top: 20px;
+margin-bottom: 20px;}
+div.space{
+height:200px;
+width:100%;}
+div a{color:white;}
+a:hover{
+color:yellow;
+text-decoration:none;}
+
+
+div a{color:white;}
+
+.navbar-inverse .navbar-nav  li  a:hover {
+
+    background-color:rgba(255,255,255,0.5);
+transition: 0.3s;
+  border-left: 4px dotted white;
+  border-right: 4px dotted white;
+font-family:Agency FB;}
+.navbar-inverse .navbar-nav .dropdown-menu{
+background-color:black;
+
+}
+.navbar-inverse .navbar-nav .dropdown-menu li  a {
+color:white;
+}
+
+.navbar-inverse .navbar-nav .dropdown-menu  li  a:hover{
+   background-color:rgba(255,255,255,0.5);
+transition: 0.8s;
+font-family:Agency FB;}}
+
+
+
+</style>
+</head>
+<body>
+<div class="container-fluid">
+<header id="example1">
+<img src="../images/abc.png" height="150">
+<h1 class="pull-right" style="font-family:impact;color:teal;background-color:rgba(0,0,0,0.8)">
+FRAGRANCES<br>A sweet spray of joy & Wind of Fresh Aroma</h1>
+</header> </div>
+
+<div class="container-fluid">
+ <!--navbar-->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li><a  href="../index.html">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Brands <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="Armani.html">Armani</a></li>
+          <li><a href="dolice.html"> Dolice gabana</a></li>
+          <li><a href="ck.html">Ck</a></li>
+	  <li><a href="dunhil.html">Dunhill</a></li>
+	  <li><a href="diesel.html">Deisel</a></li>
+	  <li><a href="hugo.html">Hugo-Boss</a></li>
+        </ul>
+      </li>
+      
+      <li><a class="abc active" href="compare.html">Compare</a></li>
+<li><a class="abc" href="common.html">Common</a></li>
+<li><a class="abc" href="contact.html">Contact us</a></li>
+    </ul>
+  </div>
+</div>
+</nav>
+<!--navbar-->
+
+
+<div class="container-fluid">
+  
+
+
+    <div  class="col-sm-5" style=" display:block"> 
+
+<form>
+<input type="text" list="compare" id="abc">
+<datalist id="compare">
+<option value="G Flox">
+<option value="Profumo">
+<option value="Extreme">
+<option value="Armani Code">
+<option value="Armani Code Perfume">
+<option value="Only The Brave">
+<option value="Only The brave Tatto Pour">
+<option value="Only The Brave Extreme">
+<option value="Light Blue">
+<option value="The One Desire">
+<option value="Alfred Dunhill">
+</datalist>
+<p id="ans"></p>
+</div>
+
+
+    <div  class="col-sm-2" style=" display:block"> 
+
+<input type="Button"class="btn btn-primary"  onClick="both()" value="Compare"><br>
+
+</form>
+</div>
+
+
+    <div  class="col-sm-5" style=" display:block"> 
+
+<input type="text" list="Compare1" id="abc1" >
+<datalist id="Compare1">
+<option value="One Summer">
+<option value="Beauty">
+<option value="5 Sheer Beauty">
+<option value="Euphoria">
+<option value="Controdiction">
+<option value="Bad Diesel"> 
+<option value="Pour Femme Perfume">
+<option value="Desire Extreme"> 
+
+</datalist>
+
+<p id="ans1"></p>
+ </div>
+
+</div>
+
+<script>
+
+function fun1(){
+	
+	var a=document.getElementById("abc").value;
+	
+	if(a=="G Flox"){
+		document.getElementById("ans").innerHTML="<img src='../images/01.jpg' height=300 width=300><br>Key Features<br> Brand Name:Giorgio Armani <br>Volume:120ml <br>Fragrance:Long Lasting <br>price:70$ ";
+		}
+	
+	
+	else if(a=="Profumo"){
+		document.getElementById("ans").innerHTML="<img src='../images/abc.jpg' height=300 width=300><br>Key Features<br> Brand Name:Giorgio Armani <br>Volume:150ml <br>Fragrance:Long Lasting <br>price:59$ ";
+		}
+		
+		
+	else if(a=="Extreme"){
+		document.getElementById("ans").innerHTML="<img src='../images/02.jpg' height=300 width=300><br>Key Features<br> Brand Name:Giorgio Armani <br>Volume:120ml <br>Fragrance:Long Lasting <br>price:59$ ";
+		}
+         else if(a=="Armani Code"){
+		document.getElementById("ans").innerHTML="<img src='../images/03.jpg' height=300 width=300><br>Key Features<br> Brand Name:Giorgio Armani <br>Volume:100ml <br>Fragrance:Long Lasting <br>price:57$ ";
+		}
+         else if(a=="Armani Code Perfume"){
+		document.getElementById("ans").innerHTML="<img src='../images/04.jpg' height=300 width=300><br>Key Features<br> Brand Name:Giorgio Armani <br>Volume:100ml <br>Fragrance:Long Lasting <br>price:95$ ";
+		}
+          else if(a=="Only The Brave"){
+		document.getElementById("ans").innerHTML="<img src='../images/dim0.jpg' height=300 width=300><br>Key Features<br> Brand Name:Diesel <br>Volume:125ml <br>Fragrance:Long Lasting <br>price:59$ ";
+		}
+         else if(a=="Only The brave Tatto Pour"){
+		document.getElementById("ans").innerHTML="<img src='../images/dim1.jpg' height=300 width=300><br>Key Features<br> Brand Name:Diesel <br>Volume:125ml <br>Fragrance:Long Lasting <br>price:70$ ";
+		}
+          else if(a=="Only The Brave Extreme"){
+		document.getElementById("ans").innerHTML="<img src='../images/dim2.jpg' height=300 width=300><br>Key Features<br> Brand Name:Diesel <br>Volume:125ml <br>Fragrance:Long Lasting <br>price:70$ ";
+		}
+          else if(a=="Light Blue"){
+		document.getElementById("ans").innerHTML="<img src='../images/gabana2.jpg' height=300 width=300><br>Key Features<br> Brand Name:Dolce & Gabbana <br>Volume:100ml <br>Fragrance:Long Lasting <br>price:59$ ";
+		}
+          else if(a=="The One Desire"){
+		document.getElementById("ans").innerHTML="<img src='../images/gabanaw0.jpg' height=300 width=300><br>Key Features<br> Brand Name:Dolce & Gabbana <br>Fragrance:Long Lasting <br>price:90$ ";
+		}	
+          else if(a=="Alfred Dunhill"){
+		document.getElementById("ans").innerHTML="<img src='../images/dunhilm3.jpg' height=300 width=300><br>Key Features<br> Brand Name:Dunhill <br>Volume:200ml <br>Fragrance:Long Lasting <br>price:59$ ";
+		}	
+	else{
+		
+		document.getElementById("ans").innerHTML="Invalid";
+		}
+	
+	
+	}
+
+ 
+
+function fun2(){
+	
+	var b=document.getElementById("abc1").value;
+	
+	if(b=="One Summer"){
+		document.getElementById("ans1").innerHTML="<img src='../images/ckm4.jpg' height=300 width=300><br>Key Features<br> Brand Name:Calvein Klein <br>Volume:200ml <br>Fragrance:Long Lasting <br>price:59$ ";
+		}
+	
+	
+	else if(b=="Beauty"){
+		document.getElementById("ans1").innerHTML="<img src='../images/ckw2.jpg' height=300 width=300><br>Key Features<br> Brand Name:Calvein Klein <br>Volume:200ml <br>Fragrance:Long Lasting <br>price:59$ ";
+		}
+		
+		
+	else if(b=="5 Sheer Beauty"){
+		document.getElementById("ans1").innerHTML="<img src='../images/ckw1.jpg' height=300 width=300><br>Key Features<br> Brand Name:Calvein Klein <br>Volume:200ml <br>Fragrance:Long Lasting <br>price:59$";
+		}
+        else if(b=="Euphoria"){
+		document.getElementById("ans1").innerHTML="<img src='../images/ckw4.jpg' height=300 width=300><br>Key Features<br> Brand Name:Calvein Klein <br>Volume:200ml <br>Fragrance:Long Lasting <br>price:59$";
+		}
+        else if(b=="Controdiction"){
+		document.getElementById("ans1").innerHTML="<img src='../images/ckm2.jpg' height=300 width=300><br>Key Features<br> Brand Name:Calvein Klein <br>Volume:200ml <br>Fragrance:Long Lasting <br>price:70$";
+		}
+        else if(b=="Bad Diesel"){
+		document.getElementById("ans1").innerHTML="<img src='../images/dim3.jpg' height=300 width=300><br>Key Features<br> Brand Name:Diesel <br>Volume:125ml <br>Fragrance:Long Lasting <br>price:57$ ";
+		}
+        else if(b=="The One"){
+		document.getElementById("ans1").innerHTML="<img src='../images/gabanaw1.jpg' height=300 width=300><br>Key Features<br> Brand Name:Dolce & Gabbana <br>Volume:125ml <br>Fragrance:Long Lasting <br>price:70$ ";
+		}
+ else if(b=="Pour Femme Perfume"){
+		document.getElementById("ans1").innerHTML="<img src='../images/gabanaw3.jpg' height=300 width=300><br>Key Features<br> Brand Name:Dolce & Gabbana<br>Volume:100ml <br>Fragrance:Long Lasting <br>price:70$";
+		}
+ else if(b=="Desire Extreme"){
+		document.getElementById("ans1").innerHTML="<img src='../images/dunhilm2.jpg' height=300 width=300><br>Key Features<br> Brand Name:Dunhill <br>Volume:200ml <br>Fragrance:Long Lasting <br>price:70$ ";
+		}	
+	else{
+		
+		document.getElementById("ans1").innerHTML="Invalid";
+		}
+	
+	
+	}
+
+function both(){
+    fun1();
+    fun2();
+}
+
+</script>
+<!--footer-->
+<div class="container-fluid">
+<div class="space">
+    <div class="col-sm-4" style='background-color:rgba(0,0,0,0.7); font-family:"RobotoRegular",Arial,sans-serif; color:white;height:200px; display:block;'>
+<h3 style="color:white;font-family:impact">Brands:</h3><br>
+<a href="Armani perfumes/Armani perfumes.html"> Armani </a><br>
+<a href="dolice gabban pic/dolice gabana.html"> Dolice gabana </a><br>
+<a href="ck/ck perfumes.html"> ck </a><br>
+<a href="dunhil/dunhil.html"> Dunhill </a><br>
+<a href="diesel/diesel perfumes.html"> Diesel </a><br>
+<a href="hugo boss/hugo boss.html"> Hugo boss </a>
+</div>
+
+    <div class="col-sm-4" style='background-color:rgba(0,0,0,0.7); font-family:"RobotoRegular",Arial,sans-serif; color:white;height:200px; display:block;'>
+<h3 style="color:white;font-family:impact">OUR OUTLETS:</h3><br>
+TARIQ ROAD<br><br>
+GULSHAN-E-IQBAL<br><br>
+CLIFTON
+</div>
+
+
+    <div class="col-sm-4" style='background-color:rgba(0,0,0,0.7); font-family:"RobotoRegular",Arial,sans-serif; color:white;height:200px; display:block;'>
+
+<h3 style="color:white;font-family:impact">Connect:</h3><br>
+<p><a href="https://www.instagram.com"><i class="fa fa-instagram" ></i> Instagram</p>
+<a href="https://www.facebook.com"><i class="fa fa-facebook"></i> Facebook</p></a>
+<a href="https://twitter.com"><i class="fa fa-twitter" ></i> Twitter</p></a>
+<a href="mailto:hashimyousuf789@gmail.com"><i class="fa fa-envelope" ></i> Gmail</p></a>
+
+ </div>
+    <div  class="col-sm-12" style="background-color:black; color:white; font-size:100%; text-align:center"> 
+<p>|Copy right@2018PAAREES PERFUMES All right reserved.|</p>
+ </div>
+</div>
+</div>
+
+
+<!--footer-->
+
+
+
+
+
+
+
+</body>
+</html>
+
+</html>
